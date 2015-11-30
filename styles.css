@@ -5,7 +5,7 @@
 	border-top: 5px solid black;
 	border-bottom: 5px solid black;
 	position: relative;
-	background-color: #008000;
+	background-color: #438643;
 
 }
 h1 {
@@ -24,31 +24,50 @@ h1 {
 	max-width: 100%;
 	background-image: url("assets/Seaside-Cottage.jpg");
 	text-align: center;
+	background-repeat: none;
+	background-size: 100%;
+
 }
 
-.navbar {
+.nav-bar {
+	display: inline;
+	text-align: top;
+	height: 100px;
+	text-align: center;
 
 }
-
- .navbar li{
+  .nav-bar li{
 	display: inline-block;
-	margin: 20px;
+	margin-left: 25px;
 	padding-top: px;
-	padding: 5px;
+	padding: 3px;
 	list-style: none;
 	font-size: 20px;
-	border: 1px solid black;
+	border: ;
 	background-color: #d3d3d3;
-	border-radius: 0px;
-}
-.navbar li:hover {
-	background-color: white;
+	vertical-align: top;
+	position: relative;
 }
 
-.subnav li {
+.nav-bar li:hover {
+	color: #32CD32;
+}
 
+ .sub-nav  {
 	display: block;
+	border: none;
+	background-color: none;
+	text-align: ;
+	position: absolute;
 }
+.sub-nav li {
+	border: none;
+	background-color:none;
+	display: block;
+	font-size: 15px;
+	margin-right: 0px;
+}
+
 	
 .thumbnail {
 	opacity: .9;
@@ -59,7 +78,7 @@ h1 {
 
 }
 .container {
-	margin-top: px;
+	margin-top: 20px;
 	background-color:;
 }
 .main-body-2 {
@@ -70,7 +89,7 @@ h1 {
 .body2 {
 	background-color: #F8FBEF;
 }
-.navbar a	{
+.nav-bar a	{
 	text-decoration: none;
 }
 .info {
@@ -86,3 +105,41 @@ h1 {
 	float:left;
 	color: black;
 }
+.image-left {
+	diplay: inline-block;
+	float: left;
+	margin-top: 15px;
+}
+.image-right {
+	display: inline-block;
+	float: right;
+}
+.container {
+	margin-top: 90px;
+}
+
+@media (min-height: 700px){
+	.main-body-1 {
+		height: 800px;
+	}
+}
+@media (max-width: 1065px){
+			h1{
+			font-size: 60px;
+			}
+			.subhead{
+			display: none;
+			}
+			.main-body{
+				max-height: 100%;
+			}
+		}
+@media (max-width: 600px){
+			h1{
+			font-size: 30px;
+			}
+			.image-left, .image-right{
+				display:none;
+			}
+}
+

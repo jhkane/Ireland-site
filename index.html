@@ -7,9 +7,16 @@
 	<link rel="stylesheet" style= "text/css" href="styles.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="bootstrap.js"></script>
+	<script src="script.js"></script>
 </head>
 <body>
 	<div class="header">
+	<div class="image-left">
+	<img src="assets/harp.gif">
+	</div>
+	<div class="image-right">
+	<img src="assets/shamrock.png">
+	</div>
 		<h1>
 			Your Irish Vacation Guide
 		</h1>
@@ -18,8 +25,8 @@
 		</p>
 	</div>
 	<div class="main-body-1">
-		<nav>
-			<ul class="navbar"> 
+		<div class="navbar">
+			<ul class="nav-bar"> 
 				<li>
 					<a href="index.html">Home</a>
 				</li>
@@ -28,18 +35,34 @@
 				</li>
 				<li>
 					<a href="#">Lodging</a>
+					<ul class="sub-nav hidden">
+						<li><a href="http://www.irelandhotels.com/">Hotels</a></li>
+						<li><a href="http://www.bandbireland.com/">B&B's</a></li>
+						<li><a href="https://www.airbnb.com/s/Ireland">airbnb</a></li>
+						<li><a href="http://www.hostels.com/ireland">Hostels</a></li>
+					</ul>
 				</li>
 				<li>
-					<a href="#">Tours</a>
+					<a href="#">Transportation</a>
+					<ul class="sub-nav hidden">
+						<li><a href="https://www.irishtourism.com/escorted-bus-tours-of-ireland">Bus</a></li>
+						<li><a href="http://www.dan-dooley.ie/">Car</a></li>
+						<li><a href="https://www.ryanair.com/gb/en/">Air</a></li>
+						<li><a href="http://www.irishrail.ie/">Train</a></li>    
+					</ul>
 				</li>
 				<li>
 					<a href="#">Travel Tips</a>
 				</li>
-				</ul>
-			</nav>
+				<li>
+				<a href="#">Contact</a></li>
+				</li>
+			</ul>
 			
 		</div>
+		
+	</div>
 
 
-	</body>
-	</html>
+</body>
+</html>
